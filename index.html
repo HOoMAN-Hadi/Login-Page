@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Login page</title>
+  </head>
+  <body>
+    <div class="alert"><h1 class="alerth1">Welcome</h1></div>
+    <div class="box">
+      <h1>H.H</h1>
+      <h4>Login</h4>
+      <div class="container-inputs">
+        <input
+          onkeydown="userNameCharacLenght()"
+          type="text"
+          id="username"
+          placeholder="username"
+        /><span class="inputMeseage1"></span>
+        <input
+          onkeydown="passwordCharacLenght()"
+          type="password"
+          id="password"
+          placeholder="password"
+        />
+        <div class="icon">
+          <i class="fa fa-eye"></i>
+          <!-- <i class="fa fa-eye-slash"></i> -->
+        </div>
+        <span class="inputMeseage2"
+          >Password characters must be betwin 3-8</span
+        >
+        <input
+          onclick="loginErorAlert()"
+          type="submit"
+          value="Login"
+          id="btn"
+        />
+      </div>
+      <p>
+        <a href="#">forget password</a> <span>or</span> <a href="#">sign up</a>
+      </p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
